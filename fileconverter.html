@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+        <title>File converter</title>
+        <link rel="stylesheet" type="text/css" href="fileconverter.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>File To PDF Converter</h1>
+            <div class="upload-img">
+                <input type="file" name="" onChange="loadImg(event)" accept=".png, .jpg, .jpeg">
+                Upload File
+            </div>
+            <img id="showImg">
+            <button onClick="pdfDown()">File To PDF</button>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+        <script type="text/javascript" src="fileconverter.js"></script>
+    </body>
+</html>
